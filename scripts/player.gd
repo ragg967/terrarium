@@ -6,7 +6,10 @@ const SPEED = 100.0
 var interacting: bool = false
 
 func _process(delta: float) -> void:
-	
+	if Input.is_action_just_pressed("interact"):
+		interacting = true
+	else:
+		interacting = false
 
 func _physics_process(_delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.

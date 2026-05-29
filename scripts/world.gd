@@ -1,5 +1,5 @@
 extends Node2D
-class_name TutorialWorld
+class_name World
 
 @onready var label: Label = $LockPuzzle/Label
 @onready var invisableWall: StaticBody2D = $LockPuzzle/AnimatedSprite2D/InvisableWall
