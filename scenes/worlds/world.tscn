@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bhildvurqqbas"]
+
+[ext_resource type="PackedScene" uid="uid://safsr1b7qmep" path="res://scenes/player.tscn" id="1_nnsk1"]
+
+[node name="World" type="Node2D" unique_id=74396187]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1128427868]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=502468691]
+
+[node name="Entites" type="Node2D" parent="." unique_id=245147911]
+
+[node name="Player" parent="Entites" unique_id=1956566936 instance=ExtResource("1_nnsk1")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1488890780]
+
+[node name="LockPuzzle" type="Node2D" parent="." unique_id=274477338]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="LockPuzzle" unique_id=1975232965]
+
+[node name="InvisableWall" type="StaticBody2D" parent="LockPuzzle/AnimatedSprite2D" unique_id=1126381526]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LockPuzzle/AnimatedSprite2D/InvisableWall" unique_id=900495077]
+
+[node name="InteractArea" type="Area2D" parent="LockPuzzle/AnimatedSprite2D" unique_id=1486016011]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LockPuzzle/AnimatedSprite2D/InteractArea" unique_id=183607648]
