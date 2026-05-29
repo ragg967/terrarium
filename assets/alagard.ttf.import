@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://whrak5vuq11w"
-path="res://.godot/imported/DotGothic16-Regular.ttf-092fd3b01eb523e1035e316b05f05b27.fontdata"
+uid="uid://ckysby6x7b07p"
+path="res://.godot/imported/alagard.ttf-1b217bf41095e904a0d0a274d73e3ba4.fontdata"
 
 [deps]
 
-source_file="res://assets/DotGothic16/DotGothic16-Regular.ttf"
-dest_files=["res://.godot/imported/DotGothic16-Regular.ttf-092fd3b01eb523e1035e316b05f05b27.fontdata"]
+source_file="res://assets/alagard.ttf"
+dest_files=["res://.godot/imported/alagard.ttf-1b217bf41095e904a0d0a274d73e3ba4.fontdata"]
 
 [params]
 

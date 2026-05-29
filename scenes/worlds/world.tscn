@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://gfa2lje2kv7t" path="res://scripts/world.gd" id="1_mnksr"]
 [ext_resource type="PackedScene" uid="uid://safsr1b7qmep" path="res://scenes/player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://bymahtb6acnan" path="res://assets/tutorial-sprite-sheet.png" id="3_sqeqr"]
-[ext_resource type="FontFile" uid="uid://whrak5vuq11w" path="res://assets/DotGothic16/DotGothic16-Regular.ttf" id="4_jwygn"]
+[ext_resource type="LabelSettings" uid="uid://cuwh1w7wygpkv" path="res://assets/label_settings.tres" id="4_jwygn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xwbf3"]
 atlas = ExtResource("3_sqeqr")
@@ -126,8 +126,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mnksr"]
+size = Vector2(192, 102.75)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mnksr"]
+radius = 22.627417
 
 [node name="World" type="Node2D" unique_id=74396187]
 script = ExtResource("1_mnksr")
@@ -156,16 +158,11 @@ shape = SubResource("RectangleShape2D_mnksr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LockPuzzle/AnimatedSprite2D/InteractArea" unique_id=183607648]
 shape = SubResource("CircleShape2D_mnksr")
 
-[node name="Label" type="Label" parent="LockPuzzle" unique_id=1481821655]
+[node name="Label" type="Label" parent="LockPuzzle" unique_id=536338312]
 visible = false
-offset_left = 120.0
-offset_top = 16.0
-offset_right = 286.0
-offset_bottom = 39.0
-scale = Vector2(0.5, 0.5)
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("4_jwygn")
-text = "Press E to interact"
+offset_right = 1.0
+offset_bottom = 24.0
+label_settings = ExtResource("4_jwygn")
 uppercase = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1488890780]
